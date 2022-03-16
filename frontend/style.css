@@ -1,0 +1,183 @@
+/* CSS reset start */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+  }
+a{
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+
+button,
+a {
+    cursor: pointer;
+    color: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+button,
+textarea,
+select {
+    appearance: none !important;
+    border-radius: 0;
+}
+
+ol, ul, li {
+    list-style:none;display:block;
+}
+
+/* CSS reset end */
+
+body {
+    background-color: #f7e4d4;
+}
+
+.root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.root h1 {
+    font-family: 'EB Garamond', serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: #467745;
+}
+
+.root form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 480px;
+}
+
+.root form input {
+    background-color: #fff;
+    height: 64px;
+    width: 100%;
+    max-width: 480px;
+    margin: 20px 0;
+    padding: 20px;
+    color: #467745;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.root form input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #768576;
+}
+
+.root form textarea {
+    background-color: #fff;
+    height: 120px;
+    width: 100%;
+    max-width: 480px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.root form textarea::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #768576;
+}
+
+.root form div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    width: 480px;
+}
+
+.root form div input {
+    height: 15px;
+    width: 15px;
+}
+
+.root form div p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    overflow-wrap: normal;
+    color: #467745;
+}
+
+.root form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #467745;
+    height: 80px;
+    width: 280px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 400;
+    font-family: 'EB Garamond', serif;
+    letter-spacing: 0.2em;
+    color: #f7e4d4;
+}
+
+@media (max-width: 520px) {
+    .root {
+        align-items: flex-start;
+    }
+
+    .root h1 {
+        align-self: flex-start;
+        margin-left: 20px;
+        font-size: 36px;
+    }
+
+    .root form {
+        align-items: flex-start;
+        align-self: flex-start;
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .root form input {
+        width: calc(100% - 40px);
+    }
+
+    .root form textarea {
+        width: calc(100% - 40px);
+    }
+
+    .root form div {
+        align-self: flex-start;
+        width: 350px;
+    }
+
+    .root form div p {
+        width: 230px;
+    }
+
+    .root form button {
+        align-self: center;
+    }
+}
